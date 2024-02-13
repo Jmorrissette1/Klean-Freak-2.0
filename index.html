@@ -13,6 +13,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -21,24 +30,52 @@
 <body>
     <!-- Weather/Manage account bar-->
     <div class="top-header">
-        <div class=" the-weather">
-            Silverdale
+        <div class="weather-section">
+            <div class=" the-weather">
+                <img src="Weather-Icon.svg" width="56" height="56">
+                <a href="https://www.yahoo.com/news/weather/united-states/washington/silverdale-2493820"><span
+                        style="color: #000;">Silverdale</span></a>
+            </div>
+            <div class="the-weather">
+                <img src="Weather-Icon.svg" width="56" height="56">
+                <a href="https://www.yahoo.com/news/weather/united-states/washington/poulsbo-2476016"><span
+                        style="color: #000;">Poulsbo</span></a>
+            </div>
         </div>
-        <div class="the-weather">
-            Poulsbo
-        </div>
-        <div>
-            <a href="" class="manage-account-link">Manage your account</a>
+        <div class="manage-subscription">
+            <a href="manage-account.html" class="manage-account-link"><span style="color: #000;">Manage your
+                    Account</span> </a>
         </div>
     </div>
-    <div class="navigation">
-        <div>Packages</div>
-        <div>Klean Club</div>
-        <img src="Klean-Freak-Nav-Logo.png">
-        <div>About</div>
-        <div>Locations</div>
 
-    </div>
+    <!-- Nav Bar/Logo -->
+    <nav>
+        <ul class="navigation">
+            <li class="nav-element"><a href="packages.html">Packages</a></li>
+            <li class="nav-element"><a href="kleanclub.html">Klean Club</a>
+                <ul class="dropdown">
+                    <a href="kleanclub.html" class="drop-down-element">Klean Club</a>
+                    <a href="why-unlimited-page.html" class="drop-down-element">Why Unlimited?</a>
+                </ul>
+            </li>
+
+            <li><img src="Klean-Freak-Nav-Logo.png" class="klean-freak-logo"></li>
+            <li class="nav-element">About
+                <ul class="dropdown">
+                    <a href="about-us.html" class="drop-down-element">About Us</a>
+                    <a href="https://recruiting2.ultipro.com/HAS1005HLW/JobBoard/8491fa92-c48c-4541-8cb7-241a824bf93f/?q=&o=postedDateDesc"
+                        class="drop-down-element">Careers</a>
+                </ul>
+            </li>
+            <li class="nav-element">Locations
+                <ul class="dropdown">
+                    <a href="Silverdale-location.html" class="drop-down-element">Silverdale</a>
+                    <a href="Poulsbo-location.html" class="drop-down-element">Poulsbo</a>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
     <!-- Footer  -->
     <footer class="footer">
         <div>
@@ -53,6 +90,13 @@
             <p class="address-p">Poulsbo</p>
             <p class="address-p">21205 Olhava Way NW</p>
             <p class="address-p">360-616-3270 </p>
+        </div>
+        <div class="social-media-box">
+            <div>
+                <div>Follow us</div>
+                <img src="#">
+            </div>
+            <div>Manage Your account</div>
         </div>
     </footer>
 </body>
