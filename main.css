@@ -27,15 +27,7 @@ li {
   align-items: center;
 }
 
-.row{
-  display: flex;
-  flex-direction: row;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
+/* Desktop Styles */
 
 a{
   text-decoration: none;
@@ -55,7 +47,6 @@ a{
 }
 
 .the-weather{
-  
   margin-left: 5rem;
   font-size: 26px;
 
@@ -97,6 +88,7 @@ nav a {
   display: block;
   padding: 10px;
   color: #fff;
+  
 }
 
 .dropdown {
@@ -110,8 +102,13 @@ nav a {
 .drop-down-element{
   margin: 1rem;
 }
+
+.dropdown a:hover{
+  text-decoration: underline; 
+}
+
 nav li:hover .dropdown {
-  display: block;
+  display: block; 
 }
 
 .nav-element{
@@ -125,8 +122,96 @@ nav li:hover .dropdown {
   margin-bottom: -2rem;
 }
 
-.footer{
+
+.footer-desktop-view{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+}
+
+.address-p{
+  color: #fff;
+}
+.address-box{
+   text-align: center;
+   text-decoration: underline;
+}
+
+.follow-us-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.manage-account-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 250px;
+  background-color: #FEFF00;
+  height: 60px;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 17px;
+
+}
+
+.footer-mobile-view{
+  display: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+  .top-header{
+    display: none;
+  }
+  .navigation{
+    display: none;
+  }
+  .footer-desktop-view{
+    display: none;
+  }
+  .footer-mobile-view{
+    display: block;
+    background-color: #000; 
+
+  }
+  .address-box{
+  font-size: 20px;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+  }
+  .address-p{
+    text-decoration: underline;
+  }
+  .mobile-address-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .social-media-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .manage-account-btn{
+    margin-bottom: 2rem;
+    width: 320px;
+  }
+
+  .follow-us-row{
+   justify-content: space-evenly;
+  }
+  .facebook-icon-mobile{
+    margin-left: auto;
+  }
+
 }
