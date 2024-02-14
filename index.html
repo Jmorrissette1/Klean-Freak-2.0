@@ -18,13 +18,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="Favicon.png">
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="hambuger.js"></script>
 </head>
 
 <body>
@@ -81,9 +84,27 @@
 
 
     <!-- Mobile Nav bar/hamburger menu-->
+    <div class="mobile-header">
 
+        <img src="Klean-Freak-Nav-Logo.png" class="klean-freak-logo"
+            style="width: 235px; height:110px; margin-left: 1rem;">
 
+        <!-- Top Navigation Menu -->
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
 
     <footer>
         <!-- Footer Desktop View  -->
@@ -116,40 +137,41 @@
                 </a>
             </div>
         </div>
-        </div>
+    </footer>
 
-        <!-- Footer Mobile View -->
+    <!-- Footer Mobile View -->
 
-        <div class="footer-mobile-view">
-            <div class="mobile-address-box">
-                <div class="address-box">
-                    <a href="Poulsbo-location.html">
-                        <p class="address-p">Poulsbo:</p>
-                    </a>
-                    <p class="address-p">21205 Olhava Way NW</p>
-                    <p class="address-p">360-616-3270 </p>
-                </div>
-                <div class="address-box">
-                    <a href="Silverdale-location.html">
-                        <p class="address-p">Silverdale:</p>
-                    </a>
-                    <p class="address-p">9550 Ridgetop Blvd</p>
-                    <p class="address-p">360-616-3276 </p>
-                </div>
-            </div>
-            <div class="social-media-box">
-                <div class="follow-us-row">
-                    <div style="color: #fff; text-align:left;">Follow us</div>
-                    <div>
-                        <a href="https://www.facebook.com/KleanFreakCarWash/"><img src="facebook-icon.png"
-                                class="facebook-icon-mobile"></a>
-                    </div>
-                </div>
-                <a href="manage-account.html">
-                    <div class="manage-account-btn">Manage Your account</div>
+
+    <div class="footer-mobile-view">
+        <div class="mobile-address-box">
+            <div class="address-box">
+                <a href="Poulsbo-location.html">
+                    <p class="address-p">Poulsbo:</p>
                 </a>
+                <p class="address-p">21205 Olhava Way NW</p>
+                <p class="address-p">360-616-3270 </p>
+            </div>
+            <div class="address-box">
+                <a href="Silverdale-location.html">
+                    <p class="address-p">Silverdale:</p>
+                </a>
+                <p class="address-p">9550 Ridgetop Blvd</p>
+                <p class="address-p">360-616-3276 </p>
             </div>
         </div>
+        <div class="social-media-box">
+            <div class="follow-us-row">
+                <div style="color: #fff; text-align:left; margin-right: 6rem;">Follow us</div>
+                <div>
+                    <a href="https://www.facebook.com/KleanFreakCarWash/"><img src="facebook-icon.png"
+                            class="facebook-icon-mobile"></a>
+                </div>
+            </div>
+            <a href="manage-account.html">
+                <div class="manage-account-btn">Manage Your account</div>
+            </a>
+        </div>
+    </div>
     </footer>
 
 
