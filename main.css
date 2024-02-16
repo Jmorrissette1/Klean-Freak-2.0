@@ -19,8 +19,11 @@ li {
   list-style: none;
 }
 
+
+
 :root{
  --menu-background-color: #4295D0;
+ --menu-color: #085F9D;
 }
 
 .container {
@@ -170,7 +173,7 @@ nav li:hover .dropdown {
   display: none;
 }
 
-.mobile-header{
+.top-nav-m{
   display: none;
 }
 
@@ -178,87 +181,299 @@ nav li:hover .dropdown {
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 
-  .top-header{
-    display: none;
-  }
-  .navigation{
-    display: none;
-  }
-  .footer-desktop-view{
-    display: none;
-  }
-  .mobile-header{
-    display: block;
-    background-color: #085F9D;
-    display: flex;
-    justify-content: space-between;
-  }
+    .top-header{
+      display: none;
+    }
+    .navigation{
+      display: none;
+    }
+    .footer-desktop-view{
+      display: none;
+    }
+    .mobile-header{
+      display: block;
+      background-color: #085F9D;
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .hamburger-button{
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .hamburger-button{
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  .footer-mobile-view{
-    display: block;
-    background-color: #000; 
+    .footer-mobile-view{
+      display: block;
+      background-color: #000; 
 
-  }
-  .address-box{
-  font-size: 17px;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-  }
-  .address-p{
-    text-decoration: underline;
-  }
-  .mobile-address-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .social-media-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 18px;
-  }
-
-  .manage-account-btn{
+    }
+    .address-box{
+    font-size: 17px;
+    margin-top: 3rem;
     margin-bottom: 2rem;
-    width: 320px;
-  }
+    }
+    .address-p{
+      text-decoration: underline;
+    }
+    .mobile-address-box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .social-media-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+    }
 
-  .follow-us-row{
-    justify-content: space-between;
-  }
-  .facebook-icon-mobile{
-    margin-left: auto;
-  }
-  .mobile-nav {
-    display: none; 
-  }
-  
-  .mobile-nav.open {
-    display: block;
-  }
+    .manage-account-btn{
+      margin-bottom: 2rem;
+      width: 320px;
+    }
 
-  .hamburger {
-    /* styles for hamburger button */
-  }
+    .follow-us-row{
+      justify-content: space-between;
+    }
+    .facebook-icon-mobile{
+      margin-left: auto;
+    }
+    .top-nav-m {
+      display: none; 
+    }
+    
+    .mobile-nav.open {
+      display: block;
+    }
+
+    .klean-freak-logo{
+      margin-bottom: 0;
+      margin-top: 0;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+      
+    /* Style the navigation menu */
+    
+    .mobile-menu-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      background-color: var(--menu-color);
+      color: #fff;
+      width: 100%;
+      text-align: left;
+      transition: 0.4s;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-top: 3rem;
+      margin-left: 0.8rem;
+    }
+
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .top-nav-m {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--menu-color);
+      color: #FFF;
+      height: 100px;
+      padding: 1em;
+    }
+    
+    .menu {
+      align-items: flex-start;
+      flex-direction: row;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu > li {
+      margin: 0 1rem;
+      overflow: hidden;
+    }
+    
+    .menu-button-container {
+      display: flex;
+      margin-top: 2rem;
+      margin-right: 1rem;
+      height: 100%;
+      width: 30px;
+      cursor: pointer;
+      flex-direction: column;
+      
+    }
+    
+    #menu-toggle {
+      display: none;
+    }
+    
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      height: 4px;
+      width: 30px;
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+    }
+    
+    .menu-button::before {
+      content: '';
+      margin-top: -8px;
+    }
+    
+    .menu-button::after {
+      content: '';
+      margin-top: 8px;
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+      margin-top: 0px;
+      transform: rotate(405deg);
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button {
+      background: var(--menu-color);
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+      margin-top: 0px;
+      transform: rotate(-405deg);
+    }
+    
   
-  .hamburger span {
-    /* styles for each line */
-  }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 6rem;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .hamburger-menu-list{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-content: left;
+       width: 100%;
+       background-color: #085F9D;
+       text-align: left;
+      }
+
+
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      height: auto;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      margin: 0;
+      width: 100%;
+      color: white;
+      background-color: var(--menu-color);
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+   /** .mobile-menu-btn{
+      width: 100%;
+      background-color: var(--menu-color);
+      color: #fff;
+    }
+   ***/
+
+      /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+      background-color: var(--menu-color);
+      color: #fff;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      transition: 0.4s;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .accordian-no-click{
+      background-color: var(--menu-color);
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ 
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+      width: 400px;
+      padding: 0 18px;
+      background-color: var(--menu-background-color);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      align-content: center;
+    }
+
+    .hamburger-panel-element{
+      height: 40px; 
+      margin-top: 1rem;
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
   
-  .nav {
-    display: none; 
-  }
-  
-  .nav.open {
-    display: block;
-  }
+    .the-weather{
+      margin-right: 2rem;
+    }
+    .weather-section{
+      margin-left: 3rem;
+    }
+
+
+    .the-weather{
+      font-size: 17px;
+      margin-left: 0;
+      margin-top: 1rem;
+      
+    }
+      
+    .manage-account-nav{
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    .manage-account-nav-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      width: 100%;
+      background-color: #FEFF00;
+      height: 60px;
+      color: #000;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 17px;
+    }
 }

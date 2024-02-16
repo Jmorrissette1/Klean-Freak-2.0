@@ -27,7 +27,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="hambuger.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -64,7 +64,7 @@
                 </ul>
             </li>
 
-            <li><img src="Klean-Freak-Nav-Logo.png" class="klean-freak-logo"></li>
+            <li><a href="index.html"><img src="Klean-Freak-Nav-Logo.png" class="klean-freak-logo"></a></li>
             <li class="nav-element">About
                 <ul class="dropdown">
                     <a href="about-us.html" class="drop-down-element">About Us</a>
@@ -74,8 +74,9 @@
             </li>
             <li class="nav-element">Locations
                 <ul class="dropdown">
-                    <a href="Silverdale-location.html" class="drop-down-element">Silverdale</a>
                     <a href="Poulsbo-location.html" class="drop-down-element">Poulsbo</a>
+                    <a href="Silverdale-location.html" class="drop-down-element">Silverdale</a>
+
                 </ul>
             </li>
 
@@ -84,27 +85,100 @@
 
 
     <!-- Mobile Nav bar/hamburger menu-->
-    <div class="mobile-header">
+    <section class="top-nav-m">
+        <div>
+            <a href="index.html"><img src="Klean-Freak-Nav-Logo.png" class="klean-freak-logo"
+                    style="width: 235px; height:110px; margin-left: 1rem; margin-top: 2rem; margin-bottom: -2rem;"></a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
 
-        <img src="Klean-Freak-Nav-Logo.png" class="klean-freak-logo"
-            style="width: 235px; height:110px; margin-left: 1rem;">
+        <ul class="menu hamburger-menu-list">
+            <li class="mobile-nav-element"> <a href="packages.html">
+                    <div class="mobile-menu-btn">Packages</div>
+                </a></li>
+            <li>
+                <div>
+                    <div class="accordion">Klean Club</div>
+                    <div class="panel">
 
-        <!-- Top Navigation Menu -->
-        <button class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+                        <a href="kleanclub.html">
+                            <div class="hamburger-panel-element"> Klean Club</div>
+                        </a>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+                        <a href="why-unlimited-page.html">
+                            <div class="hamburger-panel-element">Why unlimited?</div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="accordion">About</div>
+                    <div class="panel">
+                        <a href="about-us.html">
+                            <div class="hamburger-panel-element">About Us</div>
+                        </a>
+                        <a
+                            href="https://recruiting2.ultipro.com/HAS1005HLW/JobBoard/8491fa92-c48c-4541-8cb7-241a824bf93f/?q=&o=postedDateDesc">
+                            <div class="hamburger-panel-element">Careers
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="accordion">Location</div>
+                    <div class="panel">
+                        <a href="Poulsbo-location.html">
+                            <div class="hamburger-panel-element">Poulsbo
+                            </div>
+                        </a>
+                        <a href="Silverdale-location.html">
+                            <div class="hamburger-panel-element">Silverdale</div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="weather-section">
+                    <div class=" the-weather">
+                        <img src="White-Weather-Icon.svg" width="30" height="30" style="margin-right: 1rem;">
+                        <a href=" https://www.yahoo.com/news/weather/united-states/washington/silverdale-2493820"><span
+                                style="color: #fff;">Silverdale</span></a>
+                    </div>
+                    <div class="the-weather">
+                        <img src="White-Weather-Icon.svg" width="30" height="30" style="margin-right: 1rem;">
+                        <a href=" https://www.yahoo.com/news/weather/united-states/washington/poulsbo-2476016"><span
+                                style="color: #fff;">Poulsbo</span></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="manage-account-nav">
+                    <a href="manage-account.html">
+                        <div class="manage-account-nav-btn">Manage Your account</div>
+                    </a>
+                </div>
+            </li>
+        </ul>
 
-    </div>
+
+    </section>
+
+
+    <section class="page-content" style="margin-top: 5rem;">
+        <div>
+            <h1>Home page</h1>
+        </div>
+
+    </section>
+
+
+
 
     <footer>
         <!-- Footer Desktop View  -->
@@ -173,7 +247,7 @@
         </div>
     </div>
     </footer>
-
+    <script src="hambuger.js"></script>
 
 </body>
 
