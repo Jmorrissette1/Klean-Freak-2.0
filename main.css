@@ -610,9 +610,11 @@ nav li:hover .dropdown {
       }
 
       .package-box{
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
       }
+
     .location-text-box{
       margin-left: auto;
       margin-right: auto;
