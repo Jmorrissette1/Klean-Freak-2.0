@@ -19,12 +19,13 @@ li {
   list-style: none;
 }
 
-
+body{  background: linear-gradient(to bottom, #4295D0, #000000);}
 
 :root{
  --menu-background-color: #4295D0;
  --menu-color: #085F9D;
 }
+
 
 .container {
   width: 100%;
@@ -178,6 +179,20 @@ nav li:hover .dropdown {
 }
 
 
+/* Manage Memembership Page */
+
+.manage-memebership-box{
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: -5rem;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 
@@ -197,6 +212,10 @@ nav li:hover .dropdown {
       justify-content: space-between;
     }
 
+    .mobile-nav-element{
+     width: 400px;
+
+    }
     .hamburger-button{
       height: 50px;
       width: 50px;
@@ -475,5 +494,13 @@ nav li:hover .dropdown {
       font-weight: 800;
       text-transform: uppercase;
       font-size: 17px;
+    }
+
+    .manage-memebership-box{
+      width: 330px;
+      padding-top: 75px;
+    }
+    .membership-link{
+      margin-top: 2rem;
     }
 }
