@@ -406,7 +406,7 @@ nav li:hover .dropdown {
       background-color: var(--menu-color);
       color: #fff;
       padding: 18px;
-      width: 100%;
+      width: 400px;
       text-align: left;
       transition: 0.4s;
       text-transform: uppercase;
