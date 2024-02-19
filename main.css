@@ -24,6 +24,7 @@ body{  background: linear-gradient(to bottom, #4295D0, #000000);}
 :root{
  --menu-background-color: #4295D0;
  --menu-color: #085F9D;
+ --klean-freak-yellow: #feff00;
 }
 
 
@@ -178,6 +179,10 @@ nav li:hover .dropdown {
   display: none;
 }
 
+.package-box{
+  background: var(--klean-freak-yellow);
+  width: 320px;
+}
 
 /* Manage Memembership Page */
 
@@ -193,6 +198,72 @@ nav li:hover .dropdown {
   margin-top: -5rem;
 }
 
+/* Location Page */
+.location-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 680px;
+  height: 875px;
+  background: #fff;
+  margin-bottom: 5rem;
+  font-size: 22px;
+}
+
+.package-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.package-box-header{
+  margin: 2rem;
+  text-align:center; 
+  font-size: 41px; 
+  font-weight: 800; 
+  line-height: 1; 
+  text-transform: uppercase;
+}
+
+.package-box-price{
+  font-size: 41px;
+  color: #fff;
+  border: 1px solid #000;
+}
+.google-map{
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.package-box-btn{
+  color: #fff;
+  background-color: #000;
+}
+
+.package-type{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight:800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.package-box-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 45px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 
