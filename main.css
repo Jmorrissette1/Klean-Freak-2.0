@@ -578,7 +578,7 @@ nav li:hover .dropdown {
     }
 
     .manage-memebership-box{
-      width: 380px;
+      width: 100vw;
       padding-top: 75px;
     }
     .membership-link{
