@@ -210,6 +210,11 @@ nav li:hover .dropdown {
   font-size: 22px;
 }
 
+.google-map-m{
+  display: none;
+  
+}
+
 .package-box{
   display: flex;
   flex-direction: column;
@@ -264,6 +269,11 @@ nav li:hover .dropdown {
   text-transform: uppercase;
   font-weight: 800;
 }
+.location-text-box{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 
@@ -574,4 +584,42 @@ nav li:hover .dropdown {
     .membership-link{
       margin-top: 2rem;
     }
+
+
+    .page-content{
+      margin-top: 2rem;
+      flex-direction: column !important;
+    }
+
+    .location-box{
+      width: 350px;
+      height: auto;
+      margin-left: auto ;
+      margin-right: auto;
+      margin-bottom: 2rem;
+    }
+
+    .google-map{
+      display: none;
+    }
+
+    .google-map-m{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+      .package-box{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    .location-text-box{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+
 }
