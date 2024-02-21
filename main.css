@@ -198,6 +198,25 @@ nav li:hover .dropdown {
   margin-top: -5rem;
 }
 
+.content-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 680px;
+  background: #fff;
+  margin-bottom: 5rem;
+  font-size: 22px;
+  padding: 45px;
+}
+
+.content-text-box{
+  font-size: 16px;
+}
+
+.text-block{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 /* Location Page */
 .location-box{
   display: flex;
@@ -589,6 +608,17 @@ nav li:hover .dropdown {
     .page-content{
       margin-top: 2rem;
       flex-direction: column !important;
+    }
+
+    .content-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 350px;
+      background: #fff;
+      margin-bottom: 5rem;
+      font-size: 22px;
+      padding: 45px;
     }
 
     .location-box{
