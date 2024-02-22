@@ -614,7 +614,7 @@ nav li:hover .dropdown {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 350px;
+      width: 100vw;
       background: #fff;
       margin-bottom: 5rem;
       font-size: 22px;
