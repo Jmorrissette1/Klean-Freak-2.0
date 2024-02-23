@@ -208,8 +208,8 @@ nav li:hover .dropdown {
   display: block;
   border: 0;
   padding: 10px;
-  width: 230px;
-  height: 220px;
+  width: 235px;
+  height: 235px;
   font-size: 40px;
   font-weight: 800;
   color: #fff;
@@ -259,7 +259,7 @@ nav li:hover .dropdown {
 }
 
 .package-btn-2{
- background-color: #0B5F9D;
+ background-color: #4295D0;
 }
 
 
@@ -268,6 +268,8 @@ nav li:hover .dropdown {
 }
 .package-list{
   margin-top: 3rem;
+  font-weight: 800;
+  line-height: 40px;
 }
 .package-img{
   margin-left: 17rem;
