@@ -183,9 +183,107 @@ nav li:hover .dropdown {
   background: var(--klean-freak-yellow);
   width: 320px;
 }
+/* Packages Page */
 
-/* Manage Memembership Page */
+/* Hide / Show tab's content  */
 
+.active {
+  display: block;
+}
+
+
+.tab {
+  display: none;
+}
+
+.vertical-tabs {
+  display: flex;
+}
+
+.tab-menu {
+  flex: 1; /* take up remaining width */
+} 
+
+.tab-menu button {
+  display: block;
+  border: 0;
+  padding: 10px;
+  width: 230px;
+  height: 220px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  
+}
+
+.tab-menu button.active {
+  border: none;
+}
+
+.tab-content {
+  width: 500px; /* take up more width */
+  padding: 20px;
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content div.active {
+  display: block;
+}
+.arrow{
+  display: none;
+}
+
+.active::after {
+  content: " ";
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid teal;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.package-btn-1{
+  background-color: #C22C3B;
+}
+
+.package-btn-1 + arrow{
+  display: inline-block;
+}
+
+.package-btn-2{
+ background-color: #0B5F9D;
+}
+
+
+.package-btn-3{
+  background-color: #C1C1C1;
+}
+.package-list{
+  margin-top: 3rem;
+}
+.package-img{
+  margin-left: 17rem;
+  animation: animName 2s linear infinite;
+}
+
+@keyframes animName {
+50%{
+     transform: rotate(30deg);
+    }
+ 100%{
+     transform: rotate(0deg);
+    }
+ }
+
+ 
 .manage-memebership-box{
   width: 1000px;
   display: flex;
@@ -229,6 +327,14 @@ nav li:hover .dropdown {
   font-size: 22px;
 }
 
+.package-selection-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background: #fff;
+  font-size: 22px;
+}
 .google-map-m{
   display: none;
   
@@ -288,6 +394,11 @@ nav li:hover .dropdown {
   text-transform: uppercase;
   font-weight: 800;
 }
+
+.package-box-btn.selected{
+ background-image: url(red-arrow.svg);
+}
+
 .location-text-box{
   margin-left: 3rem;
   margin-right: 3rem;
@@ -654,5 +765,8 @@ nav li:hover .dropdown {
       font-size: 18px;
       margin-bottom: 1rem;
     }
+
+ 
+
 
 }

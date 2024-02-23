@@ -10,8 +10,8 @@
         content="Take pride in your ride, Kitsap County! Our Car Wash puts the Klean back in your machine!✨ Transform your car from road warrior to dazzling showstopper at Klean Freak Car Wash! Serving Silverdale & Poulsbo with eco-friendly washes, meticulous detailing, & VIP service. Visit our sparkling locations & experience the Klean Freak difference!">
     <title>Klean Freak Car Wash | Serving Poulsbo & Silverdale Washington</title>
     <link rel="canonical" href="https://kleanfreakcarwash.com/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="Favicon.png">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -28,6 +36,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
@@ -170,11 +180,97 @@
     </section>
 
 
-    <section class="page-content" style="margin-top: 5rem;">
-        <div>
-            <h1>Packages</h1>
-        </div>
+    <section class="page-content" style="display: flex; justify-content: center;">
+        <div class="package-selection-box">
+            <div class="vertical-tabs">
+                <div class="tab-menu">
+                    <button class="tab-btn active package-btn-1" data-tab="1">Ultimate Freak</button>
+                    <button class="tab-btn package-btn-2" data-tab="2">Super Freak</button>
+                    <button class="tab-btn package-btn-3" data-tab="3">Klean Freak</button>
+                </div>
 
+                <div class="tab-content">
+                    <div class="tab active" data-tab="1">
+
+
+                        <ul class="package-list">
+                            <li>UNDERCARRIAGE BLAST</li>
+                            <li>WHEEL BLAST</li>
+                            <li>2 HOT PRESOAKS</li>
+                            <li> HIGH PRESSURE PASS</li>
+                            <li>CLEAR COAT PROTECTANT</li>
+                            <li>HIGH PRESSURE RINSE</li>
+                            <li>FORCED AIR DRY</li>
+                            <li>BUG PASS</li>
+                            <li>KLEANFOAM</li>
+                            <li>KLEANSHIELD</li>
+                        </ul>
+
+
+                        <img src="Ultimate-freak-poster-img.png" class="package-img" width="175" height="175">
+                    </div>
+                    <div class="tab" data-tab="2">
+
+                        <ul class="package-list">
+                            <li>UNDERCARRIAGE BLAST</li>
+                            <li>WHEEL BLAST</li>
+                            <li>2 HOT PRESOAKS</li>
+                            <li> HIGH PRESSURE PASS</li>
+                            <li>CLEAR COAT PROTECTANT</li>
+                            <li>HIGH PRESSURE RINSE</li>
+                            <li>FORCED AIR DRY</li>
+                            <li>BUG PASS</li>
+                            <li>KLEANFOAM</li>
+                            <li>KLEANSHIELD</li>
+                        </ul>
+                        <img src="Ultimate-freak-poster-img.png" class="package-img">
+                    </div>
+                    <div class="tab" data-tab="3">
+
+
+                        <ul class="package-list">
+                            <li>UNDERCARRIAGE BLAST</li>
+                            <li>WHEEL BLAST</li>
+                            <li>2 HOT PRESOAKS</li>
+                            <li> HIGH PRESSURE PASS</li>
+                            <li>CLEAR COAT PROTECTANT</li>
+                            <li>HIGH PRESSURE RINSE</li>
+                            <li>FORCED AIR DRY</li>
+                            <li>BUG PASS</li>
+                            <li>KLEANFOAM</li>
+                            <li>KLEANSHIELD</li>
+                        </ul>
+
+
+                        <img src="Ultimate-freak-poster-img.png" class="package-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="package-box">
+            <div class="package-box-header">
+                Unlimited <br> Monthly
+                <br> Washes
+            </div>
+            <div class="package-type">
+                <div>Unlimited Freak</div>
+                <div style="margin-bottom: 1rem;"><img src="$42-mo..png"></div>
+            </div>
+            <div class="package-type">
+                <div>Super Freak</div>
+                <div style="margin-bottom: 1rem;"><img src="$32-mo..png"></div>
+            </div>
+            <div class="package-type">
+                <div>Klean Freak</div>
+                <div style="margin-bottom: 1rem;"><img src="$23-mo..png"></div>
+            </div>
+            <a href="kleanclub.html">
+                <div class="package-box-btn">Sign Up</div>
+            </a>
+            <a href="why-unlimited-page.html">
+                <div class="package-box-btn">Learn More</div>
+            </a>
+        </div>
     </section>
 
 
@@ -248,7 +344,7 @@
     </div>
     </footer>
     <script src="hambuger.js"></script>
-
+    <script src="package-box.js"></script>
 </body>
 
 </html>
