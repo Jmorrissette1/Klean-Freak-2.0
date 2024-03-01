@@ -214,23 +214,27 @@ video {
 
 .hero-package-box{
   width: 320px;
-  height: 460px;
+  height: 600px;
   background-color: var(--klean-freak-yellow);
   margin-right: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
+  text-align: center;
   }
 
-  .hero-package-box-btn{
+.hero-package-box-btn{
     width: 220px;
     height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
-    }
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+}
 /* Packages Page */
 
 /* Hide / Show tab's content  */
@@ -454,6 +458,13 @@ video {
   margin-right: 3rem;
 }
 
+@media only screen and (max-width: 1425px){
+  .hero-package-box{
+    margin-right: 10rem;
+  }
+
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 
@@ -461,6 +472,10 @@ video {
       display: none;
     }
     .navigation{
+      display: none;
+    }
+
+    .hero-section-background-video{
       display: none;
     }
     .footer-desktop-view{
