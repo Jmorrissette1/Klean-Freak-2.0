@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -77,6 +76,7 @@
                 <ul class="dropdown">
                     <a href="Poulsbo-location.html" class="drop-down-element">Poulsbo</a>
                     <a href="Silverdale-location.html" class="drop-down-element">Silverdale</a>
+
                 </ul>
             </li>
 
@@ -105,7 +105,7 @@
                     <div class="panel">
 
                         <a href="kleanclub.html">
-                            <div class="hamburger-panel-element">Klean Club</div>
+                            <div class="hamburger-panel-element"> Klean Club</div>
                         </a>
 
                         <a href="why-unlimited-page.html">
@@ -170,45 +170,25 @@
     </section>
 
 
-    <section class="page-content">
-        <div class="hero-section-background-video">
-            <video autoplay muted loop>
-                <source src="klean_freak_website_video (1080p).mp4" type="video/mp4">
-            </video>
-            <div class="content">
-                <div class="hero-package-box">
-                    <div style=" margin-top: 1rem; font-size: 42px; font-weight: 800;">UNLIMITED <br>MONTHLY <br>WASHES
-                    </div>
-                    <div style="margin-top: 1rem; font-weight: 800; font-size: 21px;">STARTING AT</div>
-                    <img src="$23-mo..png">
-                    <div style="font-weight: 800; font-size: 21px;">A FEEL GOOD KLEAN<br>
-                        FOR LESS!</div>
-                    <a href="kleanclub.html">
-                        <div class="hero-package-box-btn">Sign Up</div>
-                    </a>
-                    <a href="about-us.html">
-                        <div class="hero-package-box-btn">Learn More</div>
-                    </a>
-                </div>
-            </div>
+    <section class="page-content" style="display: flex; justify-content:center; margin-top:5rem; margin-bottom: 5rem;">
+        <div class="manage-memebership-box">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+
+            <div id="status"></div>
+            <div style="text-transform: uppercase;" class="membership-link">Dont have a Account? <a
+                    href="kleanclub.html">SIGN UP</a></div>
         </div>
-        <div class="hero-section-m">
-            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
-                <div class="hero-package-box-m">
-                    <div style=" margin-top: 1rem; font-size: 42px; font-weight: 800;">UNLIMITED <br>MONTHLY <br>WASHES
-                    </div>
-                    <div style="margin-top: 1rem; font-weight: 800; font-size: 21px;">STARTING AT</div>
-                    <img src="$23-mo..png">
-                    <div style="font-weight: 800; font-size: 21px;">A FEEL GOOD KLEAN<br>
-                        FOR LESS!</div>
-                    <a href="kleanclub.html">
-                        <div class="hero-package-box-btn">Sign Up</div>
-                    </a>
-                    <a href="about-us.html">
-                        <div class="hero-package-box-btn" style="margin-bottom: 2rem;">Learn More</div>
-                    </a>
-                </div>
-            </div>
 
     </section>
 
@@ -283,7 +263,7 @@
     </div>
     </footer>
     <script src="hambuger.js"></script>
-
+    <script src="contact-script.js" defer></script>
 
 </body>
 

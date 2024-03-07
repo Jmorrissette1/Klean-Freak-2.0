@@ -201,6 +201,10 @@ video {
   position: relative;
 }
 
+.hero-section-m{
+  display: none;
+}
+
 .content {
   position: absolute;
   top: 0;
@@ -216,7 +220,7 @@ video {
   width: 320px;
   height: 600px;
   background-color: var(--klean-freak-yellow);
-  margin-right: 30rem;
+  margin-right: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
@@ -307,7 +311,7 @@ video {
 }
 
 .package-btn-1 + arrow{
-  display: inline-block;
+  
 }
 
 .package-btn-2{
@@ -477,6 +481,22 @@ video {
 
     .hero-section-background-video{
       display: none;
+    }
+
+    .hero-section-m{
+
+      display: block;
+      background-image: url(Hero-Image-M.png);
+      height: 580px;
+    }
+
+    .hero-package-box-m{
+      background-color: var(--klean-freak-yellow);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .footer-desktop-view{
       display: none;
