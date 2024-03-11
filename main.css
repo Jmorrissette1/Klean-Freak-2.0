@@ -310,8 +310,9 @@ video {
   background-color: #C22C3B;
 }
 
-.package-btn-1 + arrow{
-  
+.line-through-text{
+  text-decoration: line-through;
+  color: #C1C1C1;
 }
 
 .package-btn-2{
@@ -326,6 +327,7 @@ video {
   margin-top: 3rem;
   font-weight: 800;
   line-height: 40px;
+  font-size: 26px;
 }
 .package-img{
   margin-left: 17rem;
