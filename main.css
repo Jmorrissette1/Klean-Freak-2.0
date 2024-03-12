@@ -204,7 +204,9 @@ video {
 .hero-section-m{
   display: none;
 }
-
+.package-selection-box-m{
+  display: none;
+}
 .content {
   position: absolute;
   top: 0;
@@ -391,7 +393,6 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
   background: #fff;
   font-size: 22px;
 }
@@ -474,6 +475,7 @@ video {
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 
+
     .top-header{
       display: none;
     }
@@ -485,8 +487,11 @@ video {
       display: none;
     }
 
-    .hero-section-m{
+    .package-selection-box{
+      display: none;
+    }
 
+    .hero-section-m{
       display: block;
       background-image: url(Hero-Image-M.png);
       height: 580px;
@@ -499,6 +504,10 @@ video {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+
+    .package-selection-box-m{
+      display: block;
     }
     .footer-desktop-view{
       display: none;
