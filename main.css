@@ -25,6 +25,9 @@ body{  background: linear-gradient(to bottom, #4295D0, #000000);}
  --menu-background-color: #4295D0;
  --menu-color: #085F9D;
  --klean-freak-yellow: #feff00;
+ --unlimted-freak-red: #C22C3B;
+ --klean-freak-yellow: #feff00;
+ --klean-freak-yellow: #feff00;
 }
 
 
@@ -759,7 +762,42 @@ video {
       align-content: center;
     }
 
-    .hamburger-panel-element{
+
+    /* package accordian */
+
+    .package-accordion {
+      background-color: var(--menu-color);
+      color: #fff;
+      padding: 25px;
+      width: 100vw;
+      text-align: center;
+      transition: 0.4s;
+      text-transform: uppercase;
+      font-weight: 800;
+    
+    }
+
+    .package-panel {
+      padding-top: 25px;
+      width: 100vw;
+      background-color: #fff;
+      
+    }
+   
+
+    .package-list {
+      margin-top: 0;
+      font-weight: 800;
+      line-height: 40px;
+      font-size: 16px;
+      padding-left: 20px;
+  }
+
+  .package-img{
+   margin-left: 12rem;
+  }
+
+  .hamburger-panel-element{
       height: 40px; 
       margin-top: 1rem;
       font-size: 17px;
@@ -850,6 +888,7 @@ video {
         width: 350px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 2rem;
         margin-bottom: 2rem;
       }
 
