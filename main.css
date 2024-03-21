@@ -793,6 +793,9 @@ video {
       padding-left: 20px;
   }
 
+  .open{
+    display: block;
+  }
   .package-img{
    margin-left: 12rem;
   }
