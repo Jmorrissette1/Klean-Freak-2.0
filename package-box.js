@@ -1,5 +1,6 @@
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabs = document.querySelectorAll('.tab');
+const accordions = document.querySelectorAll(".accordion");
 
 tabBtns.forEach(btn => {
   btn.addEventListener('click', openTab);
@@ -15,3 +16,10 @@ function openTab(e) {
   tabs.forEach(tab => tab.classList.remove('active'));
   document.querySelector(`.tab[data-tab="${tabNumber}"]`).classList.add('active');
 }
+
+
+accordion.forEach(accordion => {
+  if (accordion.classList.contains("active")) {
+    accordion.style.maxHeight = "500px"; 
+  }
+});
