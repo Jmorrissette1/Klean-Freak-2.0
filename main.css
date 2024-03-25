@@ -42,9 +42,14 @@ body{  background: linear-gradient(to bottom, #4295D0, #000000);}
 /* Desktop Styles */
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
   
 }
+a:hover{
+  text-decoration: none !important;
+}
+
+
 .top-header{ 
   width: 100%;
   height: 85px; 
@@ -130,6 +135,12 @@ nav li:hover .dropdown {
   text-transform: uppercase;
   color: #fff;
 }
+
+.nav-element a:hover{
+  color: #fff !important;
+}
+
+
 .klean-freak-logo{
   position: relative;
   margin-top: 2rem;

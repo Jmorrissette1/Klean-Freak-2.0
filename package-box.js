@@ -18,8 +18,3 @@ function openTab(e) {
 }
 
 
-accordion.forEach(accordion => {
-  if (accordion.classList.contains("open")) {
-    accordion.style.maxHeight = "500px"; 
-  }
-});
