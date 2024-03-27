@@ -313,32 +313,36 @@ video {
   border-right: 10px solid transparent;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid teal;
+  border-left: 10px solid #000;
   height: 0;
   width: 0;
   position: absolute;
   right: -20px;
   top: 50%;
   transform: translateY(-50%);
+  color: blue;
 }
+
 
 .package-btn-1{
   background-color: #C22C3B;
+  outline: none;
 }
+.package-btn-2{
+  background-color: #4295D0;
+ }
+ 
+ 
+ .package-btn-3{
+   background-color: #C1C1C1;
+ }
 
 .line-through-text{
   text-decoration: line-through;
   color: #C1C1C1;
 }
 
-.package-btn-2{
- background-color: #4295D0;
-}
 
-
-.package-btn-3{
-  background-color: #C1C1C1;
-}
 .package-list{
   margin-top: 3rem;
   font-weight: 800;
@@ -359,7 +363,26 @@ video {
     }
  }
 
- 
+
+
+/** animation code for packages **/
+
+.tab-btn.active{
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  outline: none;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
+
+/** animation code for packages **/
 .manage-memebership-box{
   width: 1000px;
   display: flex;
