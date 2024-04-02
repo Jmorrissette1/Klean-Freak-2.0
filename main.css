@@ -813,6 +813,7 @@ video {
 
     .package-panel {
       padding-top: 25px;
+      padding-bottom: 25px;
       width: 100vw;
       background-color: #fff;
       
