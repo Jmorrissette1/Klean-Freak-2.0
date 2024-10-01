@@ -69,7 +69,9 @@ a:hover{
 
 }
 
-
+.event-banner-m{
+  display: none;
+}
 .manage-subscription{
   margin-left: auto;
   text-align: right;
@@ -511,8 +513,13 @@ video {
 
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
-
-
+    .event-banner-m{
+    display: block;
+    
+   }
+   .event-banner{
+    display: none;
+   }
     .top-header{
       display: none;
     }
