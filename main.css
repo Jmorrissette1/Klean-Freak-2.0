@@ -27,8 +27,6 @@ body {
   --menu-color: #085f9d;
   --klean-freak-yellow: #feff00;
   --unlimted-freak-red: #c22c3b;
-  --klean-freak-yellow: #feff00;
-  --klean-freak-yellow: #feff00;
 }
 
 .container {
@@ -455,40 +453,120 @@ video {
   margin-bottom: 2rem;
 }
 
-.package-box-btn {
-  color: #fff;
-  background-color: #000;
+/*Package Box 2.0 Styling */
+.package-col {
+  opacity: 0; /* Start with the text hidden */
+  animation: fadeIn 2s ease-in forwards;
+}
+.package-h1 {
+  color: #fbeb62;
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+.package-card {
+  width: 500px;
+  opacity: 0; /* Start with the text hidden */
+  animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+.package-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.5rem;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: var(--unlimted-freak-red);
+}
+.package-col {
+  padding: 45px;
+  max-width: 450px;
+}
+.vertical-line {
+  border-left: 2px solid #000;
+  height: 100px;
+  margin: 2rem 20px;
+}
+.package-p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.package-type {
+.package-h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.package-list {
+  display: flex;
+  flex-direction: row;
+}
+.package-price-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.package-btn {
+  width: 240px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--klean-freak-yellow);
+  border: none;
+}
+
+.package-btn:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+.package-price {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 0;
+  padding: 20px;
 }
 
-.package-box-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 45px;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  font-weight: 800;
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: -0.5rem;
 }
 
-.package-box-btn.selected {
-  background-image: url(red-arrow.svg);
+.price-span {
+  font-size: 1.5rem;
 }
 
+/*                   */
 .location-text-box {
+  margin-top: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 1425px) {

@@ -1,0 +1,91 @@
+<div id="vimeo-container">
+  <iframe
+    id="vimeo-player"
+    src="https://player.vimeo.com/video/926028659?api=1&amp;autoplay=0&amp;background=1"
+    width="640"
+    height="360"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+  ></iframe>
+  <div id="play-button"></div>
+  <div id="pause-button" style="display: none"></div>
+</div>
+
+<style>
+  #vimeo-container {
+    position: relative; /* Needed for absolute positioning of the button */
+    width: 640px; /* Match your iframe width */
+    height: 360px; /* Match your iframe height */
+    overflow: hidden; /* Hide the default Vimeo controls if needed */
+  }
+
+  #play-button,
+  #pause-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #play-button {
+    background-image: url("your-play-button-image.png");
+  }
+
+  #pause-button {
+    background-image: url("your-pause-button-image.png");
+  }
+
+  #vimeo-player {
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  var iframe = document.getElementById("vimeo-player");
+  var playButton = document.getElementById("play-button");
+  var pauseButton = document.getElementById("pause-button");
+  var vimeoPlayer;
+
+  function addVimeoAPI() {
+    var script = document.createElement("script");
+    script.src = "https://player.vimeo.com/api/player.js";
+    script.onload = () => {
+      initializeVimeoPlayer();
+    };
+    document.body.appendChild(script);
+  }
+
+  function initializeVimeoPlayer() {
+    vimeoPlayer = new Vimeo.Player(iframe);
+    vimeoPlayer.on("loaded", function () {
+      vimeoPlayer.pause();
+    });
+  }
+
+  addVimeoAPI();
+
+  playButton.addEventListener("click", function () {
+    vimeoPlayer
+      .play()
+      .then(function () {
+        vimeoPlayer.setVolume(1);
+      })
+      .catch(function (error) {
+        console.error("Error playing the video:", error);
+      });
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
+  });
+
+  pauseButton.addEventListener("click", function () {
+    vimeoPlayer.pause();
+    pauseButton.style.display = "none";
+    playButton.style.display = "block";
+  });
+</script>
