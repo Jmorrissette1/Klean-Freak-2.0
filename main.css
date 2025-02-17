@@ -454,7 +454,13 @@ video {
 }
 
 /*Package Box 2.0 Styling */
+.package-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .package-col {
+  width: 400px;
   opacity: 0; /* Start with the text hidden */
   animation: fadeIn 2s ease-in forwards;
 }
@@ -481,12 +487,20 @@ video {
   padding-left: 25px;
   background-color: var(--unlimted-freak-red);
 }
+
+.super-freak {
+  background-color: #4295d0;
+}
+
+.klean-freak {
+  background-color: #c1c1c1;
+}
 .package-col {
   padding: 45px;
   max-width: 450px;
 }
 .vertical-line {
-  border-left: 2px solid #000;
+  border-left: 2px solid #e8e8e8;
   height: 100px;
   margin: 2rem 20px;
 }
@@ -508,9 +522,9 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
 }
 .package-btn {
   width: 240px;
@@ -542,7 +556,52 @@ video {
   font-size: 1.5rem;
 }
 
+.price-type {
+  text-transform: uppercase;
+}
+.become-a-member-section {
+  display: flex;
+  flex-direction: row;
+}
+.become-member-box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20rem;
+  background-color: #feff00;
+  width: 50%;
+  height: 360px;
+}
+.become-member-box-2 {
+  background-color: #0b5f9d;
+  width: 50%;
+  height: 360px;
+}
+
+.memeber-btn {
+  width: 200px;
+  height: 60px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+}
+.memeber-btn-a {
+  text-decoration: none;
+}
+.become-member-h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.become-memeber-p {
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /*                   */
+
 .location-text-box {
   margin-top: 2rem;
   margin-left: 3rem;
@@ -685,7 +744,7 @@ video {
     margin-top: 0;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 12;
   }
 
   /* Style the navigation menu */
@@ -706,7 +765,6 @@ video {
     margin-left: 0.8rem;
   }
 
-  /* Hide the links inside the navigation menu (except for logo/home) */
   .top-nav-m {
     display: flex;
     flex-direction: row;
@@ -798,6 +856,7 @@ video {
     width: 100%;
     background-color: #085f9d;
     text-align: left;
+    z-index: 11;
   }
 
   #menu-toggle ~ .menu li {
@@ -821,14 +880,7 @@ video {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-  /** .mobile-menu-btn{
-      width: 100%;
-      background-color: var(--menu-color);
-      color: #fff;
-    }
-   ***/
 
-  /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
     background-color: var(--menu-color);
     color: #fff;
@@ -846,9 +898,7 @@ video {
     text-transform: uppercase;
     font-weight: 800;
   }
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
-  /* Style the accordion panel. Note: hidden by default */
   .panel {
     width: 400px;
     padding: 0 18px;
@@ -992,5 +1042,48 @@ video {
     margin-bottom: 1rem;
     font-size: 18px;
     margin-bottom: 1rem;
+  }
+  /* Mobile package 2.0 */
+  .package-h1 {
+    font-size: 2rem;
+  }
+  .package-section {
+    flex-direction: column;
+  }
+
+  .package-col {
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    text-align: center;
+  }
+
+  .package-card {
+    width: 100%;
+    opacity: 0;
+    animation: fadeInLeft 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+  .package-list {
+    flex-direction: column;
+  }
+  .become-a-member-section {
+    flex-direction: column;
+  }
+  .become-member-box-1 {
+    align-items: center;
+    padding-left: 1rem;
+    width: 100%;
+  }
+  .become-member-box-2 {
+    display: none;
+  }
+  .become-member-h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .become-memeber-p {
+    width: 80%;
+    text-align: center;
   }
 }
