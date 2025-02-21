@@ -452,7 +452,34 @@ video {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.package-box-btn {
+  width: 200px;
+  height: 65px;
+  margin-bottom: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+}
 
+.package-box-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.package-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 800;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
 /*Package Box 2.0 Styling */
 .package-section {
   display: flex;
